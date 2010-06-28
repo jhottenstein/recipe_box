@@ -1,0 +1,416 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Unable to load ingredient, underlying cause no such file to load -- ingredient 
+
+ /home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:158:in `require'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:158:in `require'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:265:in `require_or_load'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:224:in `depend_on'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:136:in `require_dependency'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:868:in `block in require_fixture_classes'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:865:in `each'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:848:in `fixtures'
+/home/jess/dev/recipe_box/test/test_helper.rb:35:in `<class:TestCase>'
+/home/jess/dev/recipe_box/test/test_helper.rb:5:in `<top (required)>'
+test/unit/recipe_test.rb:1:in `require'
+test/unit/recipe_test.rb:1:in `<main>'
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Unable to load ingredient, underlying cause no such file to load -- ingredient 
+
+ /home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:158:in `require'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:158:in `require'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:265:in `require_or_load'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:224:in `depend_on'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:136:in `require_dependency'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:868:in `block in require_fixture_classes'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:865:in `each'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:848:in `fixtures'
+/home/jess/dev/recipe_box/test/test_helper.rb:35:in `<class:TestCase>'
+/home/jess/dev/recipe_box/test/test_helper.rb:5:in `<top (required)>'
+/home/jess/dev/recipe_box/test/unit/ingredients_test.rb:1:in `require'
+/home/jess/dev/recipe_box/test/unit/ingredients_test.rb:1:in `<top (required)>'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `load'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `block in <main>'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `each'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `<main>'
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Unable to load ingredient, underlying cause no such file to load -- ingredient 
+
+ /home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:158:in `require'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:158:in `require'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:265:in `require_or_load'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:224:in `depend_on'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:136:in `require_dependency'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:868:in `block in require_fixture_classes'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:865:in `each'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-2.3.8/lib/active_record/fixtures.rb:848:in `fixtures'
+/home/jess/dev/recipe_box/test/test_helper.rb:35:in `<class:TestCase>'
+/home/jess/dev/recipe_box/test/test_helper.rb:5:in `<top (required)>'
+/home/jess/dev/recipe_box/test/functional/recipe_controller_test.rb:1:in `require'
+/home/jess/dev/recipe_box/test/functional/recipe_controller_test.rb:1:in `<top (required)>'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `load'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `block in <main>'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `each'
+/home/jess/.rvm/gems/ruby-1.9.1-p378/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `<main>'
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:24:20) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:25:02) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:26:27) [GET]
+Rendering recipes/index
+Completed in 11ms (View: 10, DB: 33) | 200 OK [http://test.host/recipes]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:31:35) [GET]
+Rendering recipes/index
+Completed in 11ms (View: 10, DB: 12) | 200 OK [http://test.host/recipes]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:32:50) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:34:43) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:36:03) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (0.4ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 13ms (View: 11, DB: 19) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:37:34) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (0.4ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 14ms (View: 11, DB: 8) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:40:24) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (0.5ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 17ms (View: 13, DB: 11) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:41:06) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (0.4ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 13ms (View: 11, DB: 22) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:41:25) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (6.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRecipes (20100617040204)
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCREATE TABLE `recipes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100617040204')[0m
+Migrating to CreateQuantities (20100618015149)
+  [4;36;1mSQL (11.6ms)[0m   [0;1mCREATE TABLE `quantities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100618015149')[0m
+Migrating to CreateIngredients (20100618022931)
+  [4;36;1mSQL (8.8ms)[0m   [0;1mCREATE TABLE `ingredients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100618022931')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `ingredients`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `ingredients`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `ingredients`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `quantities`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `quantities`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `quantities`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `recipes`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `recipes`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `recipes`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:47:26) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (36.1ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 52ms (View: 48, DB: 10) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:53:29) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (36.2ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 50ms (View: 47, DB: 11) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 22:54:00) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (0.7ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 50ms (View: 46, DB: 35) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:03:24) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (36.0ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 49ms (View: 46, DB: 13) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:03:44) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (36.0ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 49ms (View: 46, DB: 12) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:04:11) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (34.4ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 47ms (View: 45, DB: 32) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:09:49) [GET]
+  [4;35;1mRecipe Load (0.4ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (36.1ms)
+Rendered recipes/_recipe (0.1ms)
+Completed in 49ms (View: 46, DB: 11) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:11:48) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (35.6ms)
+Rendered recipes/_recipe (0.5ms)
+Completed in 49ms (View: 46, DB: 38) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:12:42) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (37.8ms)
+Rendered recipes/_recipe (0.6ms)
+Completed in 51ms (View: 49, DB: 9) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:18:02) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (32.8ms)
+Rendered recipes/_recipe (0.5ms)
+Completed in 49ms (View: 47, DB: 11) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-06-27 23:18:23) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (33.6ms)
+Rendered recipes/_recipe (0.5ms)
+Completed in 46ms (View: 44, DB: 11) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
