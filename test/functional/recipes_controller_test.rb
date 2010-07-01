@@ -11,4 +11,13 @@ class RecipesControllerTest < ActionController::TestCase
     assert_select "a[href*=?]", /recipes\/\d+/, :text => 'Scrambled Eggs'
     assert_select "a[href*=?]", /recipes\/\d+/, :text => 'Toast'
   end
+
+  def test_show_displays_recipe
+    name = 'Eggs'
+    instructions = 'Beat. Fry.'
+    recipe = Recipe.create!( :name => name, :instructions => instructions)
+    get :show, :id => recipe.id
+    assert_select "h2", :text => name
+    assert_select "div#instructions", :text => instructions 
+  end
 end
