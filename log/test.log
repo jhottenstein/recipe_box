@@ -768,3 +768,35 @@ Processing RecipesController#show (for 0.0.0.0 at 2010-06-30 22:19:05) [GET]
 Rendering recipes/show
 Completed in 47ms (View: 44, DB: 8) | 200 OK [http://test.host/recipes/861562950]
   [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing RecipesController#index (for 0.0.0.0 at 2010-07-12 10:51:35) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` [0m
+Rendering recipes/index
+Rendered recipes/_recipe (3.9ms)
+Rendered recipes/_recipe (0.5ms)
+Completed in 50ms (View: 48, DB: 9) | 200 OK [http://test.host/recipes]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mRecipe Create (0.2ms)[0m   [0mINSERT INTO `recipes` (`name`, `instructions`, `created_at`, `updated_at`) VALUES('Eggs', 'Beat. Fry.', '2010-07-12 14:51:35', '2010-07-12 14:51:35')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing RecipesController#show (for 0.0.0.0 at 2010-07-12 10:51:35) [GET]
+  Parameters: {"id"=>"861562947"}
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM `recipes` WHERE (`recipes`.`id` = 861562947) [0m
+Rendering recipes/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/recipes/861562947]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
