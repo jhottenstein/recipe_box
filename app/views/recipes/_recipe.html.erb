@@ -1,1 +1,3 @@
-<%= link_to recipe.name, recipe %> 
+<% content_tag_for :li, recipe do -%>
+  <%= link_to recipe.name, recipe %> 
+<% end -%>

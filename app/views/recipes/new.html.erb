@@ -1,0 +1,16 @@
+<% form_for(Recipe.new) do |f| -%>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :ingredients %>
+    <%= f.text_area :ingredients %>
+  </div>
+  <div>
+    <%= f.label :instructions %>
+    <%= f.text_area :instructions %>
+  </div>
+
+  <%= submit_tag "Add Recipe" %>
+<% end -%>

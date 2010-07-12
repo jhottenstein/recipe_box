@@ -36,3 +36,5 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+# ApplicationController.validate_all = true
+# ApplicationController.validators = [:w3c]
