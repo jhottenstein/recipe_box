@@ -1,8 +1,9 @@
 class CreateIngredients < ActiveRecord::Migration
   def self.up
     create_table :ingredients do |t|
-
-      t.timestamps
+      t.string :name
+      t.string :quantity
+      t.belongs_to :recipe
     end
   end
 

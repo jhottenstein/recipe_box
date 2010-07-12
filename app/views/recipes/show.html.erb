@@ -1,2 +1,5 @@
 <h2><%= @recipe.name %></h2>
+<ul id="ingredients">
+  <%= render :partial => 'ingredient', :collection => @recipe.ingredients %>
+</ul>
 <div id="instructions"><%= @recipe.instructions %></div>
