@@ -25,7 +25,6 @@ class RecipesControllerTest < ActionController::TestCase
     ingredients = recipe.ingredients
 
     get :show, :id => recipe.id
-    assert_select "h2", :text => name
     assert_select "ul#ingredients" do
       assert_select "li", :text => ingredients.shift.to_s
       assert_select "li", :text => ingredients.shift.to_s
