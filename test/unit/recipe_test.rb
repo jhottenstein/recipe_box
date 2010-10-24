@@ -5,4 +5,10 @@ class RecipeTest < ActiveSupport::TestCase
     recipe = Recipe.new
     recipe.ingredients
   end
+
+  def test_recipe_accepts_nested_attributes
+    recipe = Recipe.new
+    recipe.ingredients_attributes = [{:name => 'foo'}]
+  end
+  
 end
