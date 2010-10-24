@@ -16,7 +16,28 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(params[:recipe])
     if @recipe.save
-      redirect_to :action => :show, :id => @recipe
+      redirect_to @recipe
+    else
+      render :action => :new
     end
+  end
+
+  def edit
+    @recipe = Recipe.find(params[:id])
+  end
+
+  def update
+    @recipe = Recipe.find(params[:id])
+    if @recipe.update_attributes(params[:survey])
+      redirect_to @recipe
+    else
+      render :action => :edit
+    end
+  end
+
+  def destroy
+    @recipe = Recipe.find(params[:id])
+    @recipe.destroy
+    redirect_to recipes_path
   end
 end

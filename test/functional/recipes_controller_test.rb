@@ -18,6 +18,15 @@ class RecipesControllerTest < ActionController::TestCase
     end
   end
 
+  def test_index_shows_links_for_recipes
+    get :index
+    assert_select "ul#recipes" do
+      assert_select "li a[href*=?]", /recipes\/\d+\/edit/, :text => 'Edit'
+      assert_select "li a[href*=?]", /recipes\/\d+/, :text => 'Delete'
+    end
+      
+  end
+
   def test_show_displays_recipe_name
     recipe = recipes(:eggs)
     name = recipe.name
@@ -56,15 +65,21 @@ class RecipesControllerTest < ActionController::TestCase
       assert_select "input[type=text][id=recipe_ingredients_attributes_0_name]"
       assert_select "label[for=recipe_instructions]"
       assert_select "textarea[id=recipe_instructions]"
-      assert_select "input[type=submit]", :value => "Add Recipe"
+      assert_select "input[type=submit]", :value => "Submit"
     end
   end
 
   def test_create_saves_and_redirects
-    post :create, {:recipe => {:name => name}}
+    post :create, {:recipe => {:name => 'foo'}}
     assert_redirected_to recipe_path(assigns(:recipe))
   end
 
+  def test_create_invalid
+    Recipe.any_instance.stubs(:valid?).returns(false)
+    post :create, {:recipe => {:name => 'foo'}}
+    assert_template 'new'
+  end
+  
   def test_create_accepts_nested_attributes
     name = 'foos'
     ingredient_1 = 'foo'
@@ -76,4 +91,28 @@ class RecipesControllerTest < ActionController::TestCase
     assert_equal ingredient_1, recipe.ingredients.first.name
   end
 
+  def test_edit
+    get :edit, :id => Recipe.first
+    assert_template 'edit'
+    assert_template :partial => 'form'
+  end
+
+  def test_update
+    put :update, {:id => Recipe.first.id, :recipe => {:name => 'foo'}}
+    assert_redirected_to recipe_path(assigns(:recipe))
+  end
+
+  def test_update_invalid
+    Recipe.any_instance.stubs(:valid?).returns(false)
+    put :update, {:id => Recipe.first.id, :recipe => {:name => 'foo'}}
+    assert_template 'edit'
+  end
+   def test_destroy
+    recipe = Recipe.first
+    ingredients = recipe.ingredients
+    delete :destroy, :id => recipe
+    assert_redirected_to recipes_path
+    assert !Recipe.exists?(recipe.id), "Recipe still exists!"
+    assert !ingredients.any? { |ingredient| Ingredient.exists?(ingredient.id) }, "Ingredient still exists!"
+  end
 end
