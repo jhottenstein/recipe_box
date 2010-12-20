@@ -23,8 +23,12 @@ class RecipesControllerTest < ActionController::TestCase
     assert_select "ul#recipes" do
       assert_select "li a[href*=?]", /recipes\/\d+\/edit/, :text => 'Edit'
       assert_select "li a[href*=?]", /recipes\/\d+/, :text => 'Delete'
-    end
-      
+    end 
+  end
+  
+  def test_index_has_link_for_new_recipe
+    get :index
+    assert_select "a[href*=?]", /recipes\/new/, :text => "Create a new recipe"
   end
 
   def test_show_displays_recipe_name
