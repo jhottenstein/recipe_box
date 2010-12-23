@@ -6,19 +6,32 @@ class Ingredient < ActiveRecord::Base
   end
 
   def self.from_string(string)
-    self.new(parse(string))
+    parse(string)
   end
 
+  UNITS = [ 'pinch', 'dash',
+            'tsp', 't',
+            'tbsp', 'T',
+            'cup', 'c',
+            'pint', 'pt',
+            'quart', 'qt',
+            'gallon', 'gal',
+            'millilitres', 'milliliters', 'ml'
+          ]
   
-  UNITS_OF_MEASURE = ['tsp']
-  DIGITS = '\d+'
-  UNITS = '(?: tsp)*'
+  OPTIONAL_NUMBERS = '((?:\d+ )?[\d\.\/]+)?'
+  UNITS_OF_MEASURE = "(#{UNITS.join('|')})?"
   NAME = '(.+)'
-  RE = Regexp.new("(#{DIGITS}#{UNITS}) #{NAME}")
-  /(\d(?:\/\d|\.\d)*(?: (?:tsp|teaspoon))*) /
-  def self.parse(string)
-    match = string.match(RE)
-    {:quantity => match[1], :name => match[2]}
-  end 
+  OPTIONAL_SPACE  = ' *'
+  WHOLE_INGREDIENT = /#{OPTIONAL_NUMBERS}#{OPTIONAL_SPACE}#{UNITS_OF_MEASURE}#{OPTIONAL_SPACE}#{NAME}/i
+
+  def self.parse(ingredient)
+    parsed_ingredient = ingredient.match(WHOLE_INGREDIENT)[1..3]
+    attributes = {}
+    parsed_ingredient
+    attributes[:quantity] = parsed_ingredient[0..1].compact.join(' ')
+    attributes[:name] = parsed_ingredient[2]
+    self.new(attributes)
+  end
 
 end

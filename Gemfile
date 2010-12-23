@@ -11,5 +11,5 @@ end
 
 group :test do
   # bundler requires these gems while running tests
-  gem "mocha"
+  gem "mocha", :require => false 
 end
