@@ -1,5 +1,4 @@
-db/*.sql
+.bundle
+db/*.sqlite3
 log/*.log
-tmp/**/*
-.rvmrc
-
+tmp/

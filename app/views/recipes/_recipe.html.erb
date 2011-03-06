@@ -1,4 +1,4 @@
-<% content_tag_for :li, recipe do -%>
+<%= content_tag_for :li, recipe do -%>
   <%= link_to recipe.name, recipe %> 
   <%= link_to "Edit", edit_recipe_path(recipe) %> 
   <%= link_to "Delete", recipe, :confirm => "Are you sure?", :method => :delete %> 

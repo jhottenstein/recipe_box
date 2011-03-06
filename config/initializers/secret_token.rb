@@ -2,6 +2,6 @@
 
 # Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
-# Make sure the secret is at least 30 characters and all random, 
+# Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ActionController::Base.cookie_verifier_secret = '21359fbc57e720fd42b6964b672042bea7816e65f4d648fcbd247ed50633a9202b5110da6e8d6c4c78c26d41f4c76a82e27a629cd9a17ff9d231719556ce130c';
+RecipeBox::Application.config.secret_token = '05a06f6e2416857be376978a45f60728f21e669c0f74b1981ff0ad18a5e649ea44fad272255256c0c252a825759997879d1860eadb417c5b0774b2801f89b35f'

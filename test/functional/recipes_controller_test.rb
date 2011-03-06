@@ -98,7 +98,7 @@ class RecipesControllerTest < ActionController::TestCase
   def test_edit
     get :edit, :id => Recipe.first
     assert_template 'edit'
-    assert_template :partial => 'form'
+    assert_template :partial => '_form'
   end
 
   def test_update

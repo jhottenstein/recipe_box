@@ -1,5 +1,5 @@
 source :rubygems
-gem "rails", "~> 2.3.10"
+gem "rails", "~> 3.0.5"
 
 # bundler requires these gems in all environments
 gem "ruby-pg"
