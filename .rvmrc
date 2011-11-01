@@ -1,7 +1,29 @@
+#!/usr/bin/env bash
 
-if [[ -d "${rvm_path:-$HOME/.rvm}/environments" \
-  && -s "${rvm_path:-$HOME/.rvm}/environments/ruby-1.8.7-p302" ]] ; then
-  \. "${rvm_path:-$HOME/.rvm}/environments/ruby-1.8.7-p302"
+ruby_string="ruby-1.8.7-p302"
+#gemset_name="projectname"
+
+if rvm list strings | grep -q "${ruby_string}" ; then
+
+  # Load or create the specified environment
+  if [[ -d "${rvm_path:-$HOME/.rvm}/environments" \
+    && -s "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}" ]] ; then
+    \. "${rvm_path:-$HOME/.rvm}/environments/${ruby_string}"
+  else
+    rvm --create  "${ruby_string}"
+  fi
+
+  (
+    # Ensure that Bundler is installed, install it if it is not.
+    if ! command -v bundle ; then
+      gem install bundler
+    fi
+
+  )&
+
 else
-  rvm --create use  "ruby-1.8.7-p302"
+
+  # Notify the user to install the desired interpreter before proceeding.
+  echo "${ruby_string} was not found, please run 'rvm install ${ruby_string}' and then cd back into the project directory."
+
 fi
