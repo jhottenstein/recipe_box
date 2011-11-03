@@ -18,12 +18,13 @@ class RecipesControllerTest < ActionController::TestCase
     end
   end
 
-  def test_index_shows_links_for_recipes
-    get :index
-    assert_select "ul#recipes" do
-      assert_select "li a[href*=?]", /recipes\/\d+\/edit/, :text => 'Edit'
-      assert_select "li a[href*=?]", /recipes\/\d+/, :text => 'Delete'
-    end 
+  def test_show_shows_links_for_recipes
+    recipe = recipes(:eggs)
+    name = recipe.name
+
+    get :show, :id => recipe.id
+    assert_select "a[href*=?]", /recipes\/\d+\/edit/, :text => 'Edit'
+    assert_select "a[href*=?]", /recipes\/\d+/, :text => 'Delete'
   end
   
   def test_index_has_link_for_new_recipe
@@ -63,10 +64,8 @@ class RecipesControllerTest < ActionController::TestCase
     assert_select "form[method=post]" do
       assert_select "label[for=recipe_name]"
       assert_select "input[type=text][id=recipe_name]"
-      assert_select "label[for=recipe_ingredients_attributes_0_quantity]"
-      assert_select "input[type=text][id=recipe_ingredients_attributes_0_quantity]"
-      assert_select "label[for=recipe_ingredients_attributes_0_name]"
-      assert_select "input[type=text][id=recipe_ingredients_attributes_0_name]"
+      assert_select "label[for=recipe_ingredients]"
+      assert_select "textarea[id=recipe_ingredients]"
       assert_select "label[for=recipe_instructions]"
       assert_select "textarea[id=recipe_instructions]"
       assert_select "input[type=submit]", :value => "Submit"
@@ -84,15 +83,17 @@ class RecipesControllerTest < ActionController::TestCase
     assert_template 'new'
   end
   
-  def test_create_accepts_nested_attributes
+  def test_create_accepts_unparsed_attributes
     name = 'foos'
     ingredient_1 = 'foo'
     ingredient_2 = 'bar'
-    post :create, {:recipe => {:name => name, :ingredients_attributes => [{:name => ingredient_1},{:name => ingredient_2}]}}
+    ingredients = [ingredient_1, ingredient_2].join("\n")
+    post :create, {:recipe => {:name => name, :ingredients => ingredients}}
 
     recipe = assigns(:recipe)
     assert_equal name, recipe.name
     assert_equal ingredient_1, recipe.ingredients.first.name
+    assert_equal ingredient_2, recipe.ingredients.second.name
   end
 
   def test_edit
@@ -111,7 +112,23 @@ class RecipesControllerTest < ActionController::TestCase
     put :update, {:id => Recipe.first.id, :recipe => {:name => 'foo'}}
     assert_template 'edit'
   end
-   def test_destroy
+
+  def test_update_accepts_unparsed_attributes
+    name = 'foos'
+    ingredient_1 = 'foo'
+    ingredient_2 = 'bar'
+    ingredients = [ingredient_1, ingredient_2].join("\n")
+    instructions = "put your left foot in"
+    post :update, {:id => Recipe.first.id, :recipe => {:name => name, :ingredients => ingredients, :instructions => instructions}}
+
+    recipe = assigns(:recipe)
+    assert_equal name, recipe.name
+    assert_equal ingredient_1, recipe.ingredients.first.name
+    assert_equal ingredient_2, recipe.ingredients.second.name
+    assert_equal instructions, recipe.instructions
+  end
+
+  def test_destroy
     recipe = Recipe.first
     ingredients = recipe.ingredients
     delete :destroy, :id => recipe

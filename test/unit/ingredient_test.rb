@@ -14,9 +14,16 @@ class IngredientTest < ActiveSupport::TestCase
     assert_equal 'eggs', ingredient.name
   end
 
+  def test_ingredient_parse
+    string = "eggs"
+    ingredient = Ingredient.parse(string)
+    assert_equal '', ingredient.quantity
+    assert_equal 'eggs', ingredient.name
+  end
+
   def test_parser_simple
     assert_parses(['3', 'eggs'])
-    assert_parses(['', 'eggs'])
+    assert_parses(['eggs'], ['', 'eggs'])
   end
   
   def test_parser_with_multiple_words
@@ -32,6 +39,11 @@ class IngredientTest < ActiveSupport::TestCase
     assert_parses(['dash', 'cinnamon'])
     assert_parses(['1t', 'cinnamon'], ['1 t', 'cinnamon'])    
     assert_parses(['10T', 'cinnamon'], ['10 T', 'cinnamon'])    
+  end
+
+  def test_parser_being_too_greedy
+    assert_parses(['2', 'turtle doves'])
+    assert_parses([' 10x superfine sugar'],['', '10x superfine sugar'])
   end
   
   def test_units_of_volume_measure
@@ -54,10 +66,6 @@ class IngredientTest < ActiveSupport::TestCase
     assert_units_contain 'ml'
   end
   
-  def assert_units_contain(unit)
-    assert Ingredient::UNITS.include?(unit), "Ingredient::UNITS does not include #{unit}"
-  end
-  
   def test_parser_with_rationals
     assert_parses(['1.5 tsp', 'cinnamon'])
     assert_parses(['10.5 tsp', 'cinnamon'])
@@ -75,5 +83,9 @@ private
     ingredient =  Ingredient.parse(text)
     assert_equal expected.first, ingredient.quantity, "Ingredient was #{ingredient.inspect}"
     assert_equal expected.last, ingredient.name, "Ingredient was #{ingredient.inspect}"
+  end
+
+  def assert_units_contain(unit)
+    assert Ingredient::UNITS.include?(unit), "Ingredient::UNITS does not include #{unit}"
   end
 end

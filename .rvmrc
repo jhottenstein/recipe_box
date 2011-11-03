@@ -19,7 +19,7 @@ if rvm list strings | grep -q "${ruby_string}" ; then
       gem install bundler
     fi
 
-  )&
+  )
 
 else
 

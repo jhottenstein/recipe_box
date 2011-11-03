@@ -10,8 +10,8 @@ class Ingredient < ActiveRecord::Base
   end
 
   UNITS = [ 'pinch', 'dash',
-            'tsp', 't',
-            'tbsp', 'T',
+            'teaspoon', 'tsp', 't',
+            'tablespoon', 'tbsp', 'T',
             'cup', 'c',
             'pint', 'pt',
             'quart', 'qt',
@@ -19,16 +19,15 @@ class Ingredient < ActiveRecord::Base
             'millilitres', 'milliliters', 'ml'
           ]
   
-  OPTIONAL_NUMBERS = '((?:\d+ )?[\d\.\/]+)?'
-  UNITS_OF_MEASURE = "(#{UNITS.join('|')})?"
-  NAME = '(.+)'
-  OPTIONAL_SPACE  = ' *'
-  WHOLE_INGREDIENT = /#{OPTIONAL_NUMBERS}#{OPTIONAL_SPACE}#{UNITS_OF_MEASURE}#{OPTIONAL_SPACE}#{NAME}/i
+  NAME = ' *(.+)'
+  OPTIONAL_NUMBERS = '(?:((?:\d+ )?[\d\.\/]+))?'
+  OPTIONAL_UNITS_OF_MEASURE = "(?: *((?:#{UNITS.join('|')})s?) )?"
+  WHOLE_INGREDIENT = /#{OPTIONAL_NUMBERS}#{OPTIONAL_UNITS_OF_MEASURE}#{NAME}/io
 
   def self.parse(ingredient)
-    parsed_ingredient = ingredient.match(WHOLE_INGREDIENT)[1..3]
+    temp = ingredient.match(WHOLE_INGREDIENT)
+    parsed_ingredient = temp[1..3]
     attributes = {}
-    parsed_ingredient
     attributes[:quantity] = parsed_ingredient[0..1].compact.join(' ')
     attributes[:name] = parsed_ingredient[2]
     self.new(attributes)

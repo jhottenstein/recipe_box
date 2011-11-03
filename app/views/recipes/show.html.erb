@@ -3,3 +3,5 @@
   <%= render :partial => 'ingredient', :collection => @recipe.ingredients %>
 </ul>
 <div id="instructions"><%= @recipe.instructions %></div>
+<%= link_to "Edit", edit_recipe_path(@recipe) %> 
+<%= link_to "Delete", @recipe, :confirm => "Are you sure?", :method => :delete %> 
